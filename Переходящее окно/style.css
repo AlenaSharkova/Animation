@@ -1,0 +1,28 @@
+body {
+  height: 100vw;
+}
+body .block {
+  width: 200px;
+  height: 200px;
+  background-color: #00ffff;
+  position: relative;
+  top: 100px;
+  -webkit-animation: go-left-right 2s linear infinite alternate;
+          animation: go-left-right 2s linear infinite alternate;
+}
+@-webkit-keyframes go-left-right {
+  from {
+    left: 0px;
+  }
+  to {
+    left: calc(100% - 200px);
+  }
+}
+@keyframes go-left-right {
+  from {
+    left: 0px;
+  }
+  to {
+    left: calc(100% - 200px);
+  }
+}/*# sourceMappingURL=style.css.map */
