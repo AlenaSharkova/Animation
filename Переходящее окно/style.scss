@@ -1,0 +1,22 @@
+body {
+    height: 100vw;
+
+    .block {
+        width: 200px;
+        height: 200px;
+        background-color: #00ffff;
+        position: relative;
+        top: 100px;
+        animation: go-left-right 2s linear infinite alternate;
+    } 
+
+    @keyframes go-left-right {
+        from {
+            left: 0px;
+        }
+        to {
+            left: calc(100% - 200px);
+        }
+    }
+}
+
